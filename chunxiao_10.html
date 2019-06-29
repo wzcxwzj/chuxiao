@@ -1,0 +1,547 @@
+<!      <!--   2019/6/21/13:00  项目最终版--  样式还要再调 整理完成-->
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">-->
+
+    <title>Document</title>
+
+<!--    <link rel="stylesheet" href="css/keshan1.css" type="text/css">-->
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">-->
+    <script src="jquery/jquery-1.11.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" ></script>
+
+</head>
+<body>
+<!--
+
+<div id="all22">
+    <div id="seqiduan">
+
+        <div    class="title_1">
+            <img class="title_1_0" src="QIcon/timg.jpg" width="165" height="160"/>
+            <h2 class="title_1_1">干式喷房运行大数据监测与预测智能分析平台</h2>
+            <img class="title_1_2" src="QIcon/timg1.jpg" width="165" height="160"/>
+        </div>
+
+        <div    class="one">
+            <input  class="color" type="button" value="L1"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input  class="color" type="button" value="L2"/>
+            <input  class="color" type="button" value="L3"/>
+            <input  class="color" type="button" value="L4"/>
+            <input  class="color" type="button" value="L5"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input  class="color" type="button" value="L6"/>
+            <input  class="color" type="button" value="L7"/>
+            <input  class="color" type="button" value="L8"/>
+            <input  class="color" type="button" value="L9"/>
+            <input  class="color" type="button" value="L10"/>
+            <input  class="color" type="button" value="L11"/>
+            <input  class="color" type="button" value="L12"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input  class="color" type="button" value="L13"/>
+            <input  class="color" type="button" value="L14"/>
+            <input  class="color" type="button" value="L15"/>
+            <input  class="color" type="button" value="L16"/>
+            <input  class="color" type="button" value="L17"/>
+            <input  class="color" type="button" value="L18"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input  class="color" type="button" value="L19"/>
+            <input  class="color" type="button" value="L20"/>
+            <input  class="color" type="button" value="L21"/>
+
+        </div>
+        <div    class="two">
+            <label  class="txt1">
+                过渡段
+            </label>
+            <span>
+                                                        &nbsp;
+                    </span>
+            <label class="txt1">
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BCE1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </label >
+            <span>
+                                                        &nbsp;
+                                                    </span>&nbsp;
+            &nbsp;&nbsp;<label class= "txt1">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BCI2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </label>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label  class="txt1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCE2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </label>
+            <span>
+                                                        &nbsp;
+                                           </span>
+            &nbsp;&nbsp;&nbsp; <label class="txt1">
+            &nbsp;&nbsp;&nbsp; 检查段&nbsp;&nbsp;&nbsp;
+        </label >
+            <span>
+                                                        &nbsp;
+                                                    </span>
+            <button class= "seqi">
+                色漆段
+            </button>
+
+        </div>
+        <div    class="three">
+            <input  class="color" type="button" value="R1"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input  class="color" type="button" value="R2"/>
+            <input  class="color" type="button" value="R3"/>
+            <input  class="color" type="button" value="R4"/>
+            <input  class="color" type="button" value="R5"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input  class="color" type="button" value="R6"/>
+            <input  class="color" type="button" value="R7"/>
+            <input  class="color" type="button" value="R8"/>
+            <input  class="color" type="button" value="R9"/>
+            <input  class="color" type="button" value="R10"/>
+            <input  class="color" type="button" value="R11"/>
+            <input  class="color" type="button" value="R12"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input  class="color" type="button" value="R13"/>
+            <input  class="color" type="button" value="R14"/>
+            <input  class="color" type="button" value="R15"/>
+            <input  class="color" type="button" value="R16"/>
+            <input  class="color" type="button" value="R17"/>
+            <input  class="color" type="button" value="R18"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input  class="color" type="button" value="R19"/>
+            <input  class="color" type="button" value="R20"/>
+            <input  class="color" type="button" value="R21"/>
+
+        </div>
+    </div>
+
+    <div id="all44">
+        <p >间隔1秒</p>
+        <input type="button"  value="时间刷新" onclick="fun()">
+        <button class="N3" onclick="window.location.href='echarts/index.html'">   图形展示</button>
+    </div>
+
+    <div id="all55">
+
+        <br> <div class="one_1">
+        <input class="a_1">----三天内新更换</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="a_2">----运行良好</input>&nbsp;&nbsp;&nbsp;
+        <input class="a_3">----需一周内更换</input>
+        <input class="a_4">----需近两到三天更换</input>
+        <input class="a_5">----需立即更换</input>
+    </div>
+
+        <div id="qingqiduan">
+
+            <div    class="one">
+                <input  class="color" type="button" value="L1"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input  class="color" type="button" value="L2"/>
+                <input  class="color" type="button" value="L3"/>
+                <input  class="color" type="button" value="L4"/>
+                <input  class="color" type="button" value="L5"/>
+                <input  class="color" type="button" value="L6"/>
+                <input  class="color" type="button" value="L7"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input  class="color" type="button" value="L8"/>
+                <input  class="color" type="button" value="L9"/>
+                <input  class="color" type="button" value="L10"/>
+                <input  class="color" type="button" value="L11"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input  class="color" type="button" value="L12"/>
+
+                <input  class="color" type="button" value="L13"/>
+                <input  class="color" type="button" value="L14"/>
+
+            </div>
+            <div    class="two">
+                <label  class="txt1">
+                    过渡段
+                </label>
+                <span>
+                                                        &nbsp;
+                    </span>
+                <label class="txt1">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CCINT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </label >
+                <span>
+                                                        &nbsp;
+                                                    </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;<label class= "txt1">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCE1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </label>
+                <span>
+                                                        &nbsp;
+                                                    </span>
+                &nbsp;&nbsp;&nbsp;<label class="txt1">
+                &nbsp;&nbsp;&nbsp;检查段&nbsp;&nbsp;&nbsp;&nbsp;
+            </label >
+                <span>
+                                                        &nbsp;
+                                                    </span>
+                <button class= "qingqi"  >
+                    清漆段
+                </button>
+
+            </div>
+            <div    class="three">
+                <input  class="color" type="button" value="R1"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input  class="color" type="button" value="R2"/>
+                <input  class="color" type="button" value="R3"/>
+                <input  class="color" type="button" value="R4"/>
+                <input  class="color" type="button" value="R5"/>
+                <input  class="color" type="button" value="R6"/>
+                <input  class="color" type="button" value="R7"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input  class="color" type="button" value="R8"/>
+                <input  class="color" type="button" value="R9"/>
+                <input  class="color" type="button" value="R10"/>
+                <input  class="color" type="button" value="R11"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input  class="color" type="button" value="R12"/>
+                <input  class="color" type="button" value="R13"/>
+                <input  class="color" type="button" value="R14"/>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+-->
+<div class="all">
+    <div class="allA">
+                <div class="all1">
+                    <div class="seqiduan">
+                        <img class="title_1_0" src="QIcon/timg.jpg"/>
+                        <p  class="title_1_1">干式喷房运行大数据监测与预测智能分析平台</p>
+                        <img class="title_1_2" src="QIcon/timg1.jpg" />
+                    </div>
+                </div>
+
+
+                <div class="all2">
+<!--                    <div    class="number">-->
+                         <div    class="one">
+                        <input  class="color" type="button" value="L1"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input  class="color" type="button" value="L2"/>
+                        <input  class="color" type="button" value="L3"/>
+                        <input  class="color" type="button" value="L4"/>
+                        <input  class="color" type="button" value="L5"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input  class="color" type="button" value="L6"/>
+                        <input  class="color" type="button" value="L7"/>
+                        <input  class="color" type="button" value="L8"/>
+                        <input  class="color" type="button" value="L9"/>
+                        <input  class="color" type="button" value="L10"/>
+                        <input  class="color" type="button" value="L11"/>
+                        <input  class="color" type="button" value="L12"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <input  class="color" type="button" value="L13"/>
+                        <input  class="color" type="button" value="L14"/>
+                        <input  class="color" type="button" value="L15"/>
+                        <input  class="color" type="button" value="L16"/>
+                        <input  class="color" type="button" value="L17"/>
+                        <input  class="color" type="button" value="L18"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input  class="color" type="button" value="L19"/>
+                        <input  class="color" type="button" value="L20"/>
+                        <input  class="color" type="button" value="L21"/>
+
+                    </div>
+                        <div    class="two">
+                            <label  class="txt1">
+                                过渡段
+                            </label>
+                            <span>
+                                                            &nbsp;
+                        </span>
+                            <label class="txt1">
+
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BCE1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            </label >
+                            <span>
+                                                            &nbsp;
+                                                        </span>&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class= "txt1">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BCI2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </label>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label  class="txt1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCE2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </label>
+                            <span>
+                                                            &nbsp;
+                                               </span>
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<label class="txt1">
+                            &nbsp;&nbsp;&nbsp; 检查段&nbsp;&nbsp;&nbsp;
+                        </label >
+                            <span>
+                                                            &nbsp;
+                                                        </span>
+
+
+                        </div>
+                        <div    class="three">
+                            <input  class="color" type="button" value="R1"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input  class="color" type="button" value="R2"/>
+                            <input  class="color" type="button" value="R3"/>
+                            <input  class="color" type="button" value="R4"/>
+                            <input  class="color" type="button" value="R5"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input  class="color" type="button" value="R6"/>
+                            <input  class="color" type="button" value="R7"/>
+                            <input  class="color" type="button" value="R8"/>
+                            <input  class="color" type="button" value="R9"/>
+                            <input  class="color" type="button" value="R10"/>
+                            <input  class="color" type="button" value="R11"/>
+                            <input  class="color" type="button" value="R12"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <input  class="color" type="button" value="R13"/>
+                            <input  class="color" type="button" value="R14"/>
+                            <input  class="color" type="button" value="R15"/>
+                            <input  class="color" type="button" value="R16"/>
+                            <input  class="color" type="button" value="R17"/>
+                            <input  class="color" type="button" value="R18"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input  class="color" type="button" value="R19"/>
+                            <input  class="color" type="button" value="R20"/>
+                            <input  class="color" type="button" value="R21"/>
+
+                        </div>
+<!--                     </div>-->
+
+                </div>
+
+
+                <div class="all3">
+                    <input class="a_1">----三天内新更换</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input class="a_2">----运行良好</input>&nbsp;&nbsp;&nbsp;
+                    <input class="a_3">----需一周内更换</input>
+                    <input class="a_4">----需近两到三天更换</input>
+                    <input class="a_5">----需立即更换</input>
+                </div>
+
+                <div class="all4">
+                    <div class="all4_A">
+                        <div    class="one_A">
+                            <input  class="color" type="button" value="L1"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input  class="color" type="button" value="L2"/>
+                            <input  class="color" type="button" value="L3"/>
+                            <input  class="color" type="button" value="L4"/>
+                            <input  class="color" type="button" value="L5"/>
+                            <input  class="color" type="button" value="L6"/>
+                            <input  class="color" type="button" value="L7"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input  class="color" type="button" value="L8"/>
+                            <input  class="color" type="button" value="L9"/>
+                            <input  class="color" type="button" value="L10"/>
+                            <input  class="color" type="button" value="L11"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input  class="color" type="button" value="L12"/>
+
+                            <input  class="color" type="button" value="L13"/>
+                            <input  class="color" type="button" value="L14"/>
+
+                        </div>
+                        <div    class="two_A">
+                            <label  class="txt1">
+                                过渡段
+                            </label>
+                            <span>
+                                                            &nbsp;
+                        </span>
+                            <label class="txt1">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CCINT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </label >
+                            <span>
+                                                            &nbsp;
+                                                        </span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class= "txt1">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCE1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </label>
+                            <span>
+                                                            &nbsp;
+                                                        </span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="txt1">
+                            &nbsp;&nbsp;检查段&nbsp;&nbsp;
+                        </label >
+                            <span>
+                                                            &nbsp;
+                                                        </span>
+
+
+                        </div>
+                        <div    class="three_A">
+                            <input  class="color" type="button" value="R1"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input  class="color" type="button" value="R2"/>
+                            <input  class="color" type="button" value="R3"/>
+                            <input  class="color" type="button" value="R4"/>
+                            <input  class="color" type="button" value="R5"/>
+                            <input  class="color" type="button" value="R6"/>
+                            <input  class="color" type="button" value="R7"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input  class="color" type="button" value="R8"/>
+                            <input  class="color" type="button" value="R9"/>
+                            <input  class="color" type="button" value="R10"/>
+                            <input  class="color" type="button" value="R11"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input  class="color" type="button" value="R12"/>
+                            <input  class="color" type="button" value="R13"/>
+                            <input  class="color" type="button" value="R14"/>
+
+                        </div>
+                    </div>
+
+                    <div class="all4_B">
+                        <div    class="four_A">
+                        <p >间隔1秒</p>
+                        <input type="button"  value="时间刷新" onclick="fun()">
+                        <button class="N3" onclick="window.location.href='echarts/index.html'">   图形展示</button>
+                    </div>
+                    </div>
+                </div>
+    </div>
+    <div class="allB">
+                <div class="all5">
+                    <button class= "seqi">
+                        色漆段
+                    </button>
+
+                    <button class= "qingqi"  >
+                        清漆段
+                    </button>
+
+                </div>
+
+    </div>
+
+</div>
+<script>
+    //1.设置定时器                                                时间可设
+    //2.为全局数组赋默认值
+    //3.从AJAX获取数据
+    //4.服务器数据赋值给全局数组
+    //5.if...else判断，根据颜色值范围,改变纸盒子的颜色
+
+    var parentDOM = document.getElementById("seqiduan");
+    var parentDOM1 = document.getElementById("qingqiduan");
+
+
+
+    var time =0;
+    function fun()
+    {
+        time += 1000;
+        console.log(time);
+        var int = self.setInterval("clock()", time);                    //1.设置定时器
+        if(time==10000){
+            time=0;
+        }
+    }
+
+    var array =[];                                                      //2.为全局数组赋默认值
+    var p=[];
+
+
+    function clock()
+
+    {
+        //3.从AJAX获取数据
+        $.get("dat.asp"
+            ,function(data,status){
+                var obj = JSON.parse(data);
+                array.push(obj);
+
+                for(i=0;i<90;i++)
+                {
+                    p[i]=array[0][i].A;                          //4.服务器数据赋值给全局数组
+                }
+            });
+
+        //-----------------------------------成功获取 数组P 的值-------------------------------------------
+
+        //5.获取纸盒子,  if...else判断，根据颜色值范围,改变纸盒子的颜色
+
+        for (i=0;i<42;i++)
+        {
+            var testTarget1 = parentDOM.getElementsByClassName("color")[i];     //seqiduan
+            p[i]+= Math.ceil(Math.random()*40);
+            if (p[i] <= 235)
+            {
+
+                testTarget1.style.backgroundColor = "green";    // green
+            }
+            else if (p[i]   <= 255)
+            {
+                testTarget1.style.backgroundColor = "blue";     //blue
+            }
+            else  if ( p[i]  <= 275)
+            {
+                testTarget1.style.backgroundColor = "yellow";   //yellow;
+                testTarget1.style.color = "black";
+            }
+            else if (p[i]   <= 280)
+            {
+                testTarget1.style.backgroundColor = "orange";   //orange;
+            }
+            else if (p[i]   <= 310)
+            {
+                testTarget1.style.backgroundColor = "red";   //orange;
+            }
+        }
+
+        var y =0;
+        for(i=41;i<90;i++)
+        {
+            //console.log("sssss");
+            // console.log(y);
+            // console.log("sssdsffefewfew");
+            var testTarget1_1 = parentDOM1.getElementsByClassName("color")[y];
+            p[i] += Math.ceil(Math.random() * 40);
+            if (p[i] <= 235) {
+                testTarget1_1.style.backgroundColor = "green";        // green
+
+            } else if (p[i] <= 255) {
+                testTarget1_1.style.backgroundColor = "blue";         //blue
+
+            } else if (p[i] <= 275) {
+                testTarget1_1.style.backgroundColor = "yellow";       //yellow;
+                testTarget1_1.style.color = "black";
+            } else if (p[i] <= 280) {
+                testTarget1_1.style.backgroundColor = "orange";       //orange;
+
+            } else if (p[i] <= 310) {
+                testTarget1_1.style.backgroundColor = "red";          //orange;
+            }
+            y++;
+        }
+        //  }  */
+
+        /*
+         for (var q=0;q<30;q++)
+         {     console.log("heekoi woi");
+             console.log(t[q]);
+             console.log("sssdsds");
+             var testTarget1_1 = parentDOM1.getElementsByClassName("color")[q];
+             t[q] += Math.ceil(Math.random() * 40);
+             if (t[q] <= 235) {
+                 testTarget1_1.style.backgroundColor = "green";        // green
+
+             } else if (t[q] <= 255) {
+                 testTarget1_1.style.backgroundColor = "blue";         //blue
+
+             } else if (t[q] <= 275) {
+                 testTarget1_1.style.backgroundColor = "yellow";       //yellow;
+                 testTarget1_1.style.color = "black";
+             } else if (t[q] <= 280) {
+                 testTarget1_1.style.backgroundColor = "orange";       //orange;
+
+             } else if (t[q] <= 310) {
+                 testTarget1_1.style.backgroundColor = "red";          //orange;
+             }
+         } */
+    }
+
+</script>
+
+</body>
+</html>
+<!--<button class= "seqi">-->
+<!--    色漆段-->
+<!--</button>-->
+
+<!--<button class= "qingqi"  >-->
+<!--    清漆段-->
+<!--</button>-->

@@ -1,0 +1,181 @@
+/*@media only screen and (min-width: 1029px) {
+    body {
+        background: green;
+
+    }}  */
+
+
+    html {
+        height: 100%;
+        display: table;
+    }
+
+    body {
+        display: table-cell;
+        height: 100%;
+    }
+
+    #all { /*         固定布局            */
+        top: 6px;
+        /*position: relative;*/
+        left: 5px;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        /* background-color: cornflowerblue;*/
+        background-color: darkgray;
+    }
+
+    /*
+    #menu{
+        width: 10%;
+        height: 80%;
+        background-color: red;
+
+    }*/
+    #seqiduan {
+        position: fixed;
+        top: 18%;
+        left: 10%;
+    }
+
+    .title_1_1 {
+        top: 4%;
+        position: fixed;
+        left: 23.5%;
+        font-size: 3.2em;
+    }
+
+    .title_1_0 {
+        top: 2%;
+        position: fixed;
+        left: 13%;
+        padding-left: 0px;
+
+
+    }
+
+    .title_1_2 {
+        top: 2%;
+        position: fixed;
+        left: 79%;
+    }
+
+    .one {
+        padding-left: 55px;
+        padding-top: 30px;
+
+    }
+
+    .two {
+        padding-left: 55px;
+        padding-top: 40px;
+        font-size: 2em;
+    }
+
+    .three {
+        padding-left: 55px;
+        padding-top: 40px;
+    }
+
+    .color {
+        border: 0px;
+        color: white;
+        width: 53px;
+        height: 55px;
+        background-color: blue;
+    }
+
+    .two .txt1 {
+        top: 150%;
+        left: 15%;
+        border: 2px solid;
+
+
+    }
+
+
+    #all4 {
+        position: fixed;
+        top: 84%;
+        left: 72%;
+
+    }
+
+    #all5 {
+        position: fixed;
+        top: 50%;
+        left: 16%;
+    }
+
+    .N3 .BB .PP {
+        position: fixed;
+        top: 50%;
+    }
+
+    #qingqiduan {
+        position: fixed;
+        top: 64%;
+        left: 10%;
+
+    }
+
+    .one_1 {
+        position: fixed;
+        left: 12%;
+    }
+
+    .a_1 {
+        width: 130px;
+        height: 55px;
+        background-color: green;
+    }
+
+    .a_2 {
+        width: 130px;
+        height: 55px;
+        background-color: blue;
+    }
+
+    .a_3 {
+        width: 130px;
+        height: 55px;
+        background-color: yellow;
+    }
+
+    .a_4 {
+        width: 130px;
+        height: 55px;
+        background-color: #ff903b;
+    }
+
+    .a_5 {
+        width: 130px;
+        height: 55px;
+        background-color: red;
+    }
+
+    .seqi {
+        position: fixed;
+        width: 98px;
+        height: 200px;
+        top: 23%;
+        left: 5.5%;
+        font-size: 1.3em;
+        border: 2px solid;
+        border-radius: 25px;
+        -moz-border-radius: 25px;
+    }
+
+    .qingqi {
+        position: fixed;
+        top: 70%;
+        left: 5.5%;
+        width: 98px;
+        height: 200px;
+        font-size: 1.3em;
+        border: 2px solid;
+        border-radius: 25px;
+        -moz-border-radius: 25px;
+    }
+
