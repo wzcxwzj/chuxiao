@@ -1,0 +1,247 @@
+<!      <!--   2019/6/21/13:00  项目最终版--  样式还要再调 整理完成-->
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">-->
+
+    <title>Document</title>
+
+    <!--    <link rel="stylesheet" href="css/keshan1.css" type="text/css">-->
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">-->
+    <script src="jquery/jquery-1.11.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" ></script>
+    <script type="text/javascript" src="./js/echarts.js"></script>
+
+</head>
+<body>
+
+<div class="all">
+    <div>
+        <input  id = "N1" type="checkbox"  class="grp1"/>
+        <input  id = "N2" type="checkbox"  />
+        <input  id = "N3" type="checkbox"  class="grp2" />
+        <input  id = "N4" type="checkbox" >
+        <input  id = 'N5' type='checkbox' />
+        <input  id = 'N6' type='checkbox' />
+    </div>
+    <div class="allA">
+        <div class="all1">
+            <div class="seqiduan">
+                <img class="title_1_0" src="QIcon/timg.jpg"/>
+                <p  class="title_1_1">干式喷房运行大数据监测与预测智能分析平台</p>
+                <img class="title_1_2" src="QIcon/timg1.jpg" />
+            </div>
+        </div>
+
+
+        <div class="all2">
+            <!--                    <div    class="number">-->
+            <div    class="one">
+                <input  id = "BS1_1" class="color" type="button" value="L1"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input  id = "BS1_2" class="color" type="button" value="L2"/>
+                <input  id = "BS1_3" class="color" type="button" value="L3"/>
+                <input  id = "BS1_4" class="color" type="button" value="L4"/>
+                <input  id = "BS3_1" class="color" type="button" value="L5"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input  id = "BS3_2" class="color" type="button" value="L6"/>
+                <input  id = "BS3_3" class="color" type="button" value="L7"/>
+                <input  id = "BS3_4" class="color" type="button" value="L8"/>
+                <input  id = "BS5_1" class="color" type="button" value="L9"/>
+                <input  id = "BS5_2" class="color" type="button" value="L10"/>
+                <input  id = "BS5_3" class="color" type="button" value="L11"/>
+                <input  id = "BS5_4" class="color" type="button" value="L12"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <input  id = "BS7_1" class="color" type="button" value="L13"/>
+                <input  id = "BS7_2" class="color" type="button" value="L14"/>
+                <input  id = "BS7_3" class="color" type="button" value="L15"/>
+                <input  id = "BS7_4" class="color" type="button" value="L16"/>
+                <input  id = "BS9_1" class="color" type="button" value="L17"/>
+                <input  id = "BS9_2" class="color" type="button" value="L18"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input  id = "BS9_3" class="color" type="button" value="L19"/>
+                <input  id = "BS9_4" class="color" type="button" value="L20"/>
+                <input  id = "BS9_5" class="color" type="button" value="L21"/>
+
+            </div>
+            <div    class="two">
+                <label  class="txt1">
+                    过渡段
+                </label>
+                <span>
+                                                            &nbsp;
+                        </span>
+                <label class="txt1">
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BCE1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                </label >
+                <span>
+                                                            &nbsp;
+                                                        </span>&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class= "txt1">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BCI2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </label>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label  class="txt1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCE2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </label>
+                <span>
+                                                            &nbsp;
+                                               </span>
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<label class="txt1">
+                &nbsp;&nbsp;&nbsp; 检查段&nbsp;&nbsp;&nbsp;
+            </label >
+                <span>
+                                                            &nbsp;
+                                                        </span>
+
+
+            </div>
+            <div    class="three">
+                <input  id = "BS2_1" class="color" type="button" value="R1" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input  id = "BS2_2" class="color" type="button" value="R2"/>
+                <input  id = "BS2_3" class="color" type="button" value="R3"/>
+                <input  id = "BS2_4" class="color" type="button" value="R4"/>
+                <input  id = "BS4_1" class="color" type="button" value="R5"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input  id = "BS4_2" class="color" type="button" value="R6"/>
+                <input  id = "BS4_3" class="color" type="button" value="R7"/>
+                <input  id = "BS4_4" class="color" type="button" value="R8"/>
+                <input  id = "BS6_1" class="color" type="button" value="R9"/>
+                <input  id = "BS6_2" class="color" type="button" value="R10"/>
+                <input  id = "BS6_3" class="color" type="button" value="R11"/>
+                <input  id = "BS6_4" class="color" type="button" value="R12"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <input  id = "BS8_1" class="color" type="button" value="R13"/>
+                <input  id = "BS8_2" class="color" type="button" value="R14"/>
+                <input  id = "BS8_3" class="color" type="button" value="R15"/>
+                <input  id = "BS8_4" class="color" type="button" value="R16"/>
+                <input  id = "BS10_1" class="color" type="button" value="R17"/>
+                <input  id = "BS10_2" class="color" type="button" value="R18"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input  id = "BS10_3" class="color" type="button" value="R19"/>
+                <input  id = "BS10_4" class="color" type="button" value="R20"/>
+                <input  id = "BS10_5" class="color" type="button" value="R21"/>
+
+            </div>
+            <!--                     </div>-->
+
+        </div>
+
+
+        <div class="all3">
+            <input class="a_1">----三天内新更换</input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="a_2">----运行良好</input>&nbsp;&nbsp;&nbsp;
+            <input class="a_3">----需一周内更换</input>
+            <input class="a_4">----需近两到三天更换</input>
+            <input class="a_5">----需立即更换</input>
+        </div>
+
+        <div class="all4">
+            <div class="all4_A">
+                <div    class="one_A">
+                    <input  id = "BS11_1" class="color" type="button" value="L1"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input  id = "BS11_2" class="color" type="button" value="L2"/>
+                    <input  id = "BS11_3" class="color" type="button" value="L3"/>
+                    <input  id = "BS11_4" class="color" type="button" value="L4"/>
+                    <input  id = "BS11_5" class="color" type="button" value="L5"/>
+                    <input  id = "BS13_1" class="color" type="button" value="L6"/>
+                    <input  id = "BS13_2" class="color" type="button" value="L7"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input  id = "BS13_3" class="color" type="button" value="L8"/>
+                    <input  id = "BS13_4" class="color" type="button" value="L9"/>
+                    <input  id = "BS13_5" class="color" type="button" value="L10"/>
+                    <input  id = "BS15_1" class="color" type="button" value="L11"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input  id = "BS15_2" class="color" type="button" value="L12"/>
+
+                    <input  id = "BS15_3" class="color" type="button" value="L13"/>
+                    <input  id = "BS15_4" class="color" type="button" value="L14"/>
+
+                </div>
+                <div    class="two_A">
+                    <label  class="txt1">
+                        过渡段
+                    </label>
+                    <span>
+                                                            &nbsp;
+                        </span>
+                    <label class="txt1">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CCINT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label >
+                    <span>
+                                                            &nbsp;
+                                                        </span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class= "txt1">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCE1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </label>
+                    <span>
+                                                            &nbsp;
+                                                        </span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="txt1">
+                    &nbsp;&nbsp;检查段&nbsp;&nbsp;
+                </label >
+                    <span>
+                                                            &nbsp;
+                                                        </span>
+
+
+                </div>
+                <div    class="three_A">
+                    <input  id = "BS12_1" class="color" type="button" value="R1"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input  id = "BS12_2" class="color" type="button" value="R2"/>
+                    <input  id = "BS12_3" class="color" type="button" value="R3"/>
+                    <input  id = "BS12_4" class="color" type="button" value="R4"/>
+                    <input  id = "BS12_5" class="color" type="button" value="R5"/>
+                    <input  id = "BS14_1" class="color" type="button" value="R6"/>
+                    <input  id = "BS14_2" class="color" type="button" value="R7"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input  id = "BS14_3" class="color" type="button" value="R8"/>
+                    <input  id = "BS14_4" class="color" type="button" value="R9"/>
+                    <input  id = "BS14_5" class="color" type="button" value="R10"/>
+                    <input  id = "BS16_1" class="color" type="button" value="R11"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input  id = "BS16_2" class="color" type="button" value="R12"/>
+
+                    <input  id = "BS16_3" class="color" type="button" value="R13"/>
+                    <input  id = "BS16_4" class="color" type="button" value="R14"/>
+                </div>
+            </div>
+
+            <div class="all4_B">
+                <div    class="four_A">
+                    <p >间隔1秒</p>
+                    <input type="button"  value="时间刷新" onclick="clock()">
+                    <button class="N3" onclick="window.location.href='echarts.html'">   图形展示</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="allB">
+        <div class="all5">
+            <button class= "seqi">
+                色漆段
+            </button>
+
+            <button class= "qingqi"  >
+                清漆段
+            </button>
+
+        </div>
+
+    </div>
+
+
+</div>
+<div id="chartmain5" style="width:100%; height: 100%; top:25px;background-color: darkgray"></div>
+
+
+<script src="js/index.js"> </script>
+
+
+</body>
+</html>
+
+<!--<button class= "qingqi"  >-->
+<!--    清漆段-->
+<!--</button>-->
+
