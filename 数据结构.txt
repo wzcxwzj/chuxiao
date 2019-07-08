@@ -1,0 +1,344 @@
+数据结构 之链表:		%25
+
+
+*************************************************************************************************************************
+	双向循环链表
+
+效率放在性能前
+我写出来的代码  一种情况适用 100种情况也适用
+用户想存什么样的data  就能存什么样的data
+
+普通结点的数据结构
+{
+void *data;	//用户存放的数据类型
+prev	//自引用结构的
+next
+}
+	
+头结点
+{
+	int size;
+	struct llist_node_st head;
+}LLIST;链表的起始地址类型
+
+
+
+	创建	只有头结点的双向环链
+		只包含头结点的一个空的一个双向循环链表
+
+
+	insert(哪个链表，数值，放到那去插入的位置)	24:00	加深看
+	insert的两种插入位置，第一种
+				按位置插入(首部插入，尾部插入)
+				orderinsert按顺序插入
+				
+
+	travel	回调函数	指向函数入口的地址的一个指针
+
+
+	完全没有出现用户用到的数据结构	用户用到的数据结构 他自己定义，所以程序有很好的的通用性
+	把需要用户定夺的东西都做成了	通用接口
+
+	把数据结构进行隐藏和封装，让他能看到用的LLIST类型，绝对不知道，数据结构是什么样子的
+
+	变长结构体	
+
+
+****************************************************************************************************************************
+
+/***************************/
+main.c	用户
+.c	自己封装好的库
+.h
+/**************************/	
+	
+
+插入
+	第一种 数组满了
+	if(me->last == DATASIZE-1)
+		return -1;
+	第二种 i值不对
+	if(i < 0 || i > me->last+1)
+		return -2;
+
+单向不循环的无头结点
+学习数据结构   关键在写程序
+
+
+链式存储
+	单链表	有头的单链表
+		无头的单链表
+		
+		32位机器环境
+			
+
+主要下功夫的是在双向环链当中
+#ifndef
+#define
+
+typedef int datatype 
+
+typedef struct node_st
+{
+	datatype data;
+	struct node_st *next;		自引用结构
+}linknode;
+
+创建链表()		空的单链表，只有一个头结点 		有头结点，有头的链表，第一个结点，永远不是，有效结点 
+	二种创建方式，其中一种是 二级指针传参
+	返回值:	linknode *	
+.c
+	list *me;
+	me = malloc(sizeof(*me))
+	if(me ==NULL)
+		return NULL;
+	me->next = NULL;
+	
+	return me; 
+
+链表插入  list_insert_at(list *,int i,datatype *)	(按位置插入)
+	list_order_insert(list *,datatype *)	(按顺序插入)			
+	int
+	int		
+
+.c
+	顺着当前的next指针向后移动 移动到第i个结点为止 
+	头结点暂时忽略掉
+	第一个有效结点  称作第0个结点
+	别动i值	否则i就丢了，找一个变量	，代替 i 向后移动 i只要负责当前目标的下标位置
+	l	别动next值，保存当前链表的起始位置
+	j	代替i值
+
+	 int j =0;
+	list *node =me;
+	list *newnode;
+	if(i<0)	return -1;
+	while( j < i && node != NULL )
+	{
+		node = node->next;
+		j++;		有可能存在这样的情况		10个有效结点  但是i是100    
+	}
+
+	if(node)
+	{
+		newnode = malloc ...
+		if(newnode == NULL )
+			return -2;
+		newnode->data = *data;
+
+		newnode->next = node->next;
+		node->next = newnode;
+		return 0;		
+	}
+	else
+		return -3;
+
+
+
+ 
+
+
+
+
+
+链表删除	(list *,int i,datatype *)			(按位置插入)
+	(list *,datatype *)			(根据值删除)	
+	int
+	int
+
+判断当前链表是否为空(list *)
+	int	
+.c
+	if(me->next == NULL)
+		return 0;
+	return 1
+
+
+链表的遍历(list *)
+	void
+.c	
+	list *node= me->next;
+	if(list_isempty(me)==0)
+		return ;
+	while(node != NULL)
+	{
+		printf("%d ",node->data);
+		node = node->next;
+	}
+
+	print("\n");
+
+	return
+	
+
+销毁链表(list *)
+	void
+
+.c
+	从头结点开始移动
+
+#endif
+
+
+main.c
+	
+
+单链表	无头结点的实现
+
+struct score_st						//待存储的有效信息
+{
+	int id;
+	char name[NAMESIZE];			//DATA域    数据域
+	int math;
+	int chinese;
+	
+};
+//无头结点的单项不循环链表的增加删除
+ 
+struct node_st
+{
+	struct score_st data;
+	struct node_st *next;		//自引用 
+}
+
+
+nohead.c
+
+
+struct node_st   * list_insert(struct node_st *list,struct score_st *data);
+{
+	struct node_st *new;	
+	new =malloc();	
+	if(new == NULL)
+		return -1;
+	
+	new->data =*data;
+	
+	new->next=list;
+	list=new;	
+		
+	return list;
+}
+
+void 	list_show(struct node_st *);
+{
+	struct node_st *cur;		起始位置  也是第一个有效结点
+}		
+
+int list_delete(struct node_st **list);	//删除第一个结点，指针结构会发生变化
+{	
+	跳过第一个有效结点  然后在删除
+	
+	struct node_st *cur;		
+	if(*list ==NULL)
+		retutn -1
+	*list	= (*list)->next;
+	free(cur);
+	return 0;
+}
+
+list_find(sturct node_st *,int id)
+{
+	struct node_st	*cur;
+	for(cur = list; ; cur!=NULL;cur=cur->next)
+	{
+		if(cur->data.id ==id)
+		{
+			printf("%d %s %d %d\n");
+			return 0;
+		}
+			
+	}
+	return -1;
+}		
+
+main.c
+
+int main()
+{
+		struct score_st tmp;
+		snprintf(tmp.name,NAMESIZE,"stu%d",i); 	//数组名相当于指针常量
+		snprintf				//io相关的函数
+	for(i =0 ; i<7 ; i++)				//重复7次拿到7个学生的信息
+	{		
+				
+		list = list_insert(struct node_st *, struct score_st *data);		//每一个结点都是往头部插入  最后插入的会在上面 
+				
+	}
+
+	list_show()
+		
+}
+14:00	加深看		16:00	加深看
+二级指针和一级指针传参的区别
+无头结点的单向不循环链表、
+
+*************************************************
+多项式	polynomial
+多项式合并	指数相加
+		指数	小   保留谁
+		指数相等 	      就相加		累加到目标链表上去
+
+p1		目标链表
+
+struct node_st
+{
+	int coef;	//系数
+	int exp;	//指数
+	struct node_st *next;		自引用结构
+};
+
+void	poly_union(struct node_st *p1,struct node_st *p2)
+{
+	1.跳过头结点
+	2.找到两个链表的起始位置
+	struct node_st *p,*q ,*r;				p是 p1		q是p2
+	p=p1->next;
+	q=p2->next;
+	r=p1;
+
+	3.对比，往目标链表上进行连接		
+	要定义一个指针  记录 指针最后移动的位置
+	while(p && q)
+	{
+		if(p->exp < q->exp)
+		{
+			//那就把q连进来
+					
+		}
+		else  if(p->exp >q->exp)
+		{
+			那就把p连进来
+		}
+		else	//p->exp == q->exp
+		{
+			合并  并判断系数是否为0	
+			p->coef += q->coef;
+			if(p->coef)
+			{
+				r->next=p;
+				r=p;
+					
+			}
+		}
+	}
+
+}
+
+int main()
+{
+	int a[][] = {{}{}{}{}{}}
+	struct node_st *p1,*p2;
+	poly_create;
+
+}
+//一口吃不成个  胖子，切记，细水长流，持之以恒
+//编程存在于生活的方方面面
+
+
+
+
+
+
+201904111634
+201904111635
