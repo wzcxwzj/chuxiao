@@ -1,0 +1,32 @@
+一个特别关注细节的人  也是挺可怕的
+
+typedef datatype	int
+
+struct node_st
+{
+	datatype *data;
+	struct node_st *next;
+}LLIST;
+
+	顺序存储
+	
+	1.创建，		create(LLIST *)	
+	2.插入		insert(LLIST *,int index,datatype data);
+		a:按位置
+		b:按顺序
+	3.判断是否为空	is_empty(LLIST *);
+	4.设置为空		get_empty(LLIST *);
+	5.成员个数		
+	6.查找		find(LLIST *,);
+	7.遍历		travel(LLIST *);
+
+	8.销毁		destroy(LLIST *);
+
+
+
+
+	单链表	有头结点
+		无头节点
+
+
+	双向循环链表		
